@@ -2,7 +2,7 @@ import tensorflow as tf
 
 FLAGS = tf.app.flags.FLAGS
 tf.app.flags.DEFINE_string("captcha_dir", "D:/资料/机器学习/数据资料/验证码/captcha.tfrecords",
-                           "验证码数据的路径")
+                           "验证码数据的路径")  # 路径要用全英文的路径
 tf.app.flags.DEFINE_integer("batch_size", 100, "每批次训练的样本数")
 tf.app.flags.DEFINE_integer("label_num", 4, "每个样本的目标值数量")
 tf.app.flags.DEFINE_integer("letter_num", 26, "每个目标值取的字母的可能心个数")
